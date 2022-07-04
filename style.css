@@ -54,8 +54,74 @@ table {
 }
 
 /* Header Styles */
+.header {
+  background-color: lightblue;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.searchbox {
+  display: flex;
+}
+.header-profile-pic {
+  width: 50px;
+}
+.header-profile-pic .profile-pic img {
+  max-width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+  border-radius: 50%;
+}
+
 /* Sidebar Styles */
+.sidebar {
+  background-color: lightgreen;
+}
+
 /* Nav Bar Styles */
+.nav {
+  background-color: lightcoral;
+}
+
 /* Main Content Styles */
+.content {
+  background-color: lightgray;
+}
+
 /* Footer Styles */
-/* General Selector Styles *//*# sourceMappingURL=style.css.map */
+.footer {
+  background-color: lightseagreen;
+}
+
+/* ANYTHING AFTER THIS WILL OVERWRITE STYLES ABOVE */
+body {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 5fr 0.25fr;
+  grid-template-columns: 250px 6fr;
+  grid-template-areas: "sidebar header" "sidebar nav" "sidebar content" "sidebar footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}/*# sourceMappingURL=style.css.map */

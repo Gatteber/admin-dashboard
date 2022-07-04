@@ -6,3 +6,37 @@
 @import "./scss/footer";
 
 /* ANYTHING AFTER THIS WILL OVERWRITE STYLES ABOVE */
+
+body {
+    width: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.25fr 0.5fr 5fr 0.25fr;
+    grid-template-columns: 250px 6fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar nav"
+    "sidebar content"
+    "sidebar footer";
+}
+
+.header {
+    grid-area: header;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}

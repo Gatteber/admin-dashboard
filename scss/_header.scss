@@ -1,6 +1,42 @@
 @import "./functions-variables";
 
 /* Header Styles */
+.header {
+    background-color: lightblue;
+    display: flex;
+    padding-bottom: toRem(16px);
+}
+
+.searchbox {
+    display: flex;
+    
+    .search-icon {
+
+    }
+
+    .search-bar {
+
+    }
+
+}
+
+
+.header-notification {
+
+}
+
+.header-profile-pic {
+    width: 50px;
+
+    .profile-pic img {
+        max-width: 30px;
+        height: 30px;
+        object-fit: cover;
+        object-position: top left;
+        border-radius: 50%;
+    
+    }
+}
 
 
 
