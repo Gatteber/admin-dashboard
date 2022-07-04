@@ -3,4 +3,33 @@
 /* Sidebar Styles */
 .sidebar {
     background-color: lightgreen;
+    padding-left: toRem(20px);
+}
+
+.sidebar-header {
+    padding-bottom: toRem(50px);
+}
+
+.sidebar-content-main {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(7px);
+    padding-bottom: toRem(50px);
+
+}
+
+.home, .profile, .messages, .history, .tasks, .communities {
+    display: flex;
+    gap: toRem(10px);
+}
+
+.sidebar-content-special {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(7px);
+}
+
+.settings, .support, .privacy {
+    display: flex;
+    gap: toRem(10px);
 }

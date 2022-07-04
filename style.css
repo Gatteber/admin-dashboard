@@ -79,6 +79,34 @@ table {
 /* Sidebar Styles */
 .sidebar {
   background-color: lightgreen;
+  padding-left: 1.25rem;
+}
+
+.sidebar-header {
+  padding-bottom: 3.125rem;
+}
+
+.sidebar-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+  padding-bottom: 3.125rem;
+}
+
+.home, .profile, .messages, .history, .tasks, .communities {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.sidebar-content-special {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+}
+
+.settings, .support, .privacy {
+  display: flex;
+  gap: 0.625rem;
 }
 
 /* Nav Bar Styles */
