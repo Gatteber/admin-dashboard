@@ -4,7 +4,7 @@
 .content {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 250px;
     grid-template-areas: 
     "main announce"
     "main trending";
@@ -15,17 +15,57 @@
     
     .content-text {
         font-size: 1.5rem;
+        padding: 0 0 1rem 1rem;
     }
     
     .content-projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        row-gap: 1rem;
+        justify-items: center;
     }
 
     .project {
-        border: 1px solid black;
+        // border: 1px solid black;
+        border-radius: 5px;
         width: toRem(300px);
         height: toRem(200px);
+        background-color: white;
+        display: flex;
+        gap: 10px;
+
+        .status {
+            width: 20px;
+            height: 100%;
+            background-color: yellow;
+            border-radius: 5px;
+        }
+
+        .project-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 50px;
+            padding-top: 20px;
+
+            .project-name {
+                font-weight: bold;
+                padding-bottom: 10px;
+
+            }
+
+            .project-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        .project-icons {
+            display: flex;
+            justify-content: flex-end;
+            gap: toRem(20px);
+            padding-bottom: toRem(20px);
+            padding-right: toRem(20px);
+        }
     }
 }
 

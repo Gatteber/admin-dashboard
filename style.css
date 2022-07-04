@@ -134,7 +134,7 @@ table {
 .content {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 3fr 250px;
   grid-template-areas: "main announce" "main trending";
 }
 
@@ -144,15 +144,48 @@ table {
 }
 .content-main .content-text {
   font-size: 1.5rem;
+  padding: 0 0 1rem 1rem;
 }
 .content-main .content-projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 1rem;
+  justify-items: center;
 }
 .content-main .project {
-  border: 1px solid black;
+  border-radius: 5px;
   width: 18.75rem;
   height: 12.5rem;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+}
+.content-main .project .status {
+  width: 20px;
+  height: 100%;
+  background-color: yellow;
+  border-radius: 5px;
+}
+.content-main .project .project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 20px;
+}
+.content-main .project .project-content .project-name {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.content-main .project .project-content .project-description {
+  font-size: 0.9rem;
+}
+.content-main .project .project-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .content-announcements {
@@ -168,6 +201,8 @@ table {
 /* Footer Styles */
 .footer {
   background-color: lightseagreen;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ANYTHING AFTER THIS WILL OVERWRITE STYLES ABOVE */
