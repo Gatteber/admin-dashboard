@@ -108,9 +108,15 @@
     grid-area: trending;
 
 
+
     .trending-text {
         font-size: 1.5rem;
-        padding: 10px;
+        padding-left: 1rem;
+    }
+    
+    .trending-box {
+        border: 1px solid black;
+        margin: 1rem;
     }
 
     .trending-profile {

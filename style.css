@@ -223,7 +223,11 @@ table {
 }
 .content-trending .trending-text {
   font-size: 1.5rem;
-  padding: 10px;
+  padding-left: 1rem;
+}
+.content-trending .trending-box {
+  border: 1px solid black;
+  margin: 1rem;
 }
 .content-trending .trending-profile {
   display: flex;
