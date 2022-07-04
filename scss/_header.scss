@@ -4,31 +4,38 @@
 .header {
     background-color: $stone300;
     display: flex;
-    padding-bottom: toRem(16px);
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
     color: $stone900;
 }
 
 .searchbox {
     display: flex;
-    
+ 
     .search-icon {
+        align-self: center;
+        margin-right: toRem(10px);
 
     }
 
-    .search-bar {
-
+    #search_box {
+        width: 25rem;
+        height: 1.5rem;
+        background-color: $stone400;
+        border: none;
+        border-radius: 5px;
+        color: $stone50;
     }
-
 }
 
-
-.header-notification {
-
+.header-settings {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 .header-profile-pic {
-    width: 50px;
-
+    
     .profile-pic img {
         max-width: 30px;
         height: 30px;
@@ -37,6 +44,10 @@
         border-radius: 50%;
     
     }
+}
+
+.header-username {
+    font-weight: bold;
 }
 
 

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -21,25 +24,31 @@
                 </form>
             </div>
         </div>
-        <div class="header-notification">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
-            </svg>
-        </div>
-        <div class="header-profile-pic">
-            <div class="profile-pic">
-                <img src="./images-icons/alex-knight-5-GNa303REg-unsplash.jpg" alt="#">
+        <div class="header-settings">
+            <div class="header-notification">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                </svg>
             </div>
-        </div>
-        <div class="header-username">
-            <p>Bruce Wayne</p>
+            <div class="header-profile-pic">
+                <div class="profile-pic">
+                    <img src="./images-icons/alex-knight-5-GNa303REg-unsplash.jpg" alt="#">
+                </div>
+            </div>
+            <div class="header-username">
+                <p>Bruce Wayne</p>
+            </div>
         </div>
     </div>
     <div class="sidebar">
         <div class="sidebar-header">
-            <div class="main-logo"></div>
+            <div class="main-logo">
+                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M9,17H15A2,2 0 0,0 17,15V7H15V15H13V8H11V15H9V7H7V15A2,2 0 0,0 9,17M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" />
+                </svg>
+            </div>
             <div class="main-text">
-                <p>Placeholder</p>
+                <p>ayne Industries</p>
             </div>
         </div>
         <div class="sidebar-content-main">
@@ -120,13 +129,15 @@
         </div>
     </div>
     <div class="nav">
-        <div class="profile-icon">
-            <img src="./images-icons/alex-knight-5-GNa303REg-unsplash.jpg" alt="#">
-        </div>
-        <div class="text-greeting">
-            <p class="greeting">Welcome back,</p>
-            <p class="username">Bruce Wayne (@not_batman)</p>
+        <div class="nav-profile">
+            <div class="profile-icon">
+                <img src="./images-icons/alex-knight-5-GNa303REg-unsplash.jpg" alt="#">
             </div>
+            <div class="text-greeting">
+                <p class="greeting">Welcome back,</p>
+                <p class="username">Bruce Wayne (@not_batman)</p>
+                </div>
+        </div>
         <div class="nav-button-box">
             <button>New</button>
             <button>Upload</button>
@@ -300,18 +311,7 @@
                                 <p>@KrisWells</p>
                             </div>
                             <div class="profile-info">
-                                <p>Destroy Kryptonite</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trending-profile">
-                        <div class="profile-icon"></div>
-                        <div class="profile-text">
-                            <div class="profile-name">
-                                <p>@CKent123</p>
-                            </div>
-                            <div class="profile-info">
-                                <p>Newspaper App</p>
+                                <p>KRYPTOnite</p>
                             </div>
                         </div>
                     </div>
@@ -331,7 +331,7 @@
         </div>
     </div>
     <div class="footer">
-        <p>Created by Gatteber@Github, 2022 | </p>
+        <p>Created by Gatteber@Github, 2022|</p>
         <p>Profile Photo by <a href="https://unsplash.com/@agk42?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Knight</a> on <a href="https://unsplash.com/s/photos/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </div>
     

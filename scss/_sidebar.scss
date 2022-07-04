@@ -4,10 +4,15 @@
 .sidebar {
     background-color: $stone800;
     padding-left: toRem(20px);
+    color: $stone300;
 }
 
 .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding-top: 0.25rem;
     padding-bottom: toRem(50px);
+    font-weight: bold;
 }
 
 .sidebar-content-main {
@@ -19,6 +24,7 @@
 
 .home a, .profile a, .messages a, .history a, .tasks a, .communities a {
     display: flex;
+    align-items: center;
     gap: toRem(10px);
     text-decoration: none;
     color: inherit;
@@ -32,6 +38,7 @@
 
 .settings a, .support a, .privacy a {
     display: flex;
+    align-items: center;
     gap: toRem(10px);
     text-decoration: none;
     color: inherit;
