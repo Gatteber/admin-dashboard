@@ -15,12 +15,13 @@
     flex-direction: column;
     gap: toRem(7px);
     padding-bottom: toRem(50px);
-
 }
 
-.home, .profile, .messages, .history, .tasks, .communities {
+.home a, .profile a, .messages a, .history a, .tasks a, .communities a {
     display: flex;
     gap: toRem(10px);
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar-content-special {
@@ -29,7 +30,9 @@
     gap: toRem(7px);
 }
 
-.settings, .support, .privacy {
+.settings a, .support a, .privacy a {
     display: flex;
     gap: toRem(10px);
+    text-decoration: none;
+    color: inherit;
 }

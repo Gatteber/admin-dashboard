@@ -93,9 +93,11 @@ table {
   padding-bottom: 3.125rem;
 }
 
-.home, .profile, .messages, .history, .tasks, .communities {
+.home a, .profile a, .messages a, .history a, .tasks a, .communities a {
   display: flex;
   gap: 0.625rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar-content-special {
@@ -104,9 +106,11 @@ table {
   gap: 0.4375rem;
 }
 
-.settings, .support, .privacy {
+.settings a, .support a, .privacy a {
   display: flex;
   gap: 0.625rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Nav Bar Styles */
