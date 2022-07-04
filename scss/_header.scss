@@ -2,9 +2,10 @@
 
 /* Header Styles */
 .header {
-    background-color: lightblue;
+    background-color: $stone300;
     display: flex;
     padding-bottom: toRem(16px);
+    color: $stone900;
 }
 
 .searchbox {
