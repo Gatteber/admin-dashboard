@@ -132,7 +132,37 @@ table {
 
 /* Main Content Styles */
 .content {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "main announce" "main trending";
+}
+
+.content-main {
   background-color: lightgray;
+  grid-area: main;
+}
+.content-main .content-text {
+  font-size: 1.5rem;
+}
+.content-main .content-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.content-main .project {
+  border: 1px solid black;
+  width: 18.75rem;
+  height: 12.5rem;
+}
+
+.content-announcements {
+  background-color: lightgoldenrodyellow;
+  grid-area: announce;
+}
+
+.content-trending {
+  background-color: lightsalmon;
+  grid-area: trending;
 }
 
 /* Footer Styles */
