@@ -72,10 +72,66 @@
 .content-announcements {
     background-color: lightgoldenrodyellow;
     grid-area: announce;
+    display: flex;
+    flex-direction: column;
+
+    .announcements {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+
+        .announcement-main {
+            padding-left: 10px;
+        }
+    }
+
+    .announcement-box {
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        padding: 10px;
+        align-self: center;
+
+        .announce-header {
+            padding-top: 10px;
+             padding-bottom: 10px;
+        }
+        
+        .strike {
+            text-align: center;
+            padding: 10px;
+        }
+    }
 }
 
 .content-trending {
     background-color: lightsalmon;
     grid-area: trending;
 
+
+    .trending-text {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .trending-profile {
+        display: flex;
+        padding: 10px 0 0 10px;
+
+        .profile-name {
+            font-size: 1rem;
+            padding-bottom: 2px;
+        }
+
+        .profile-info {
+            opacity: 50%;
+        }
+    }
+
+    .profile-icon {
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
 }
